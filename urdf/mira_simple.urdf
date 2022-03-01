@@ -28,9 +28,8 @@
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-                <cylinder radius="0.06" length="0.09"/>
+                <mesh filename="package://my_mira_description/models/mira/meshes/mira_body_v3.dae"/>
             </geometry>
-            <material name="White"/>
         </visual>
     </link>
     <link name="roll_M1_link">
@@ -64,33 +63,30 @@
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-                <sphere radius="0.06"/>
+                <mesh filename="package://my_mira_description/models/mira/meshes/mira_head_v5.dae"/>
             </geometry>
-            <material name="ClearWhite"/>
         </visual>
     </link>
     <link name="left_eye_link">
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-                <cylinder radius="0.00525" length="0.00525" />
+                <mesh filename="package://my_mira_description/models/mira/meshes/mira_eye_v4.dae"/>
             </geometry>
-            <material name="Black"/>
         </visual>
     </link>
     <link name="right_eye_link">
         <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-                <cylinder radius="0.00525" length="0.00525" />
+                <mesh filename="package://my_mira_description/models/mira/meshes/mira_eye_v4.dae"/>
             </geometry>
-            <material name="Black"/>
         </visual>
     </link>
     <joint name="roll_joint" type="revolute">
         <parent link="base_link"/>
         <child link="roll_M1_link"/>
-        <origin xyz="0 0 0.08" rpy="0 0 0"/>
+        <origin xyz="0 0 0.03" rpy="0 0 0"/>
         <limit lower="-0.2" upper="0.2" effort="0.1" velocity="0.005"/>
         <axis xyz="1 0 0"/>
     </joint>
@@ -111,17 +107,17 @@
     <joint name="base_head_joint" type="fixed">
         <parent link="yaw_M3_link"/>
         <child link="head_link"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 0 0" rpy="0 0 1.57"/>
     </joint>
     <joint name="head_lefteye_joint" type="fixed">
         <parent link="head_link"/>
         <child link="left_eye_link"/>
-        <origin xyz="0.06 0.01 0" rpy="0 0 0"/>
+        <origin xyz="-0.01 0.06 0.008" rpy="1.57 0 0"/>
     </joint>
     <joint name="head_righteye_joint" type="fixed">
         <parent link="head_link"/>
         <child link="right_eye_link"/>
-        <origin xyz="0.06 -0.01 0" rpy="0 0 0"/>
+        <origin xyz="0.01 0.06 0.008" rpy="1.57 0 0"/>
     </joint>
   
 </robot>
