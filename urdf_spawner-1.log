@@ -1,0 +1,23 @@
+[rospy.client][INFO] 2022-03-02 07:33:39,656: init_node, name[/urdf_spawner], pid[2525]
+[xmlrpc][INFO] 2022-03-02 07:33:39,657: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2022-03-02 07:33:39,657: Started XML-RPC server [http://1_xterm:45351/]
+[rospy.init][INFO] 2022-03-02 07:33:39,657: ROS Slave URI: [http://1_xterm:45351/]
+[rospy.impl.masterslave][INFO] 2022-03-02 07:33:39,657: _ready: http://1_xterm:45351/
+[rospy.registration][INFO] 2022-03-02 07:33:39,658: Registering with master node http://1_xterm:11311
+[xmlrpc][INFO] 2022-03-02 07:33:39,658: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2022-03-02 07:33:39,757: registered with master
+[rospy.rosout][INFO] 2022-03-02 07:33:39,758: initializing /rosout core topic
+[rospy.rosout][INFO] 2022-03-02 07:33:39,761: connected to core topic /rosout
+[rospy.simtime][INFO] 2022-03-02 07:33:39,762: initializing /clock core topic
+[rospy.simtime][INFO] 2022-03-02 07:33:39,763: connected to core topic /clock
+[rosout][INFO] 2022-03-02 07:33:39,766: Loading model XML from ros parameter robot_description
+[rosout][INFO] 2022-03-02 07:33:39,770: Waiting for service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2022-03-02 07:33:40,037: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2022-03-02 07:34:26,959: topic[/clock] adding connection to [http://1_xterm:33465/], count 0
+[rosout][INFO] 2022-03-02 07:34:27,100: Calling service /gazebo/spawn_urdf_model
+[rosout][INFO] 2022-03-02 07:34:37,169: Spawn status: SpawnModel: Entity pushed to spawn queue, but spawn service timed out waiting for entity to appear in simulation under the name mira
+[rosout][ERROR] 2022-03-02 07:34:37,171: Spawn service failed. Exiting.
+[rospy.core][INFO] 2022-03-02 07:34:37,172: signal_shutdown [atexit]
+[rospy.internal][INFO] 2022-03-02 07:34:37,174: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2022-03-02 07:34:37,175: topic[/clock] removing connection to http://1_xterm:33465/
+[rospy.impl.masterslave][INFO] 2022-03-02 07:34:37,175: atexit
