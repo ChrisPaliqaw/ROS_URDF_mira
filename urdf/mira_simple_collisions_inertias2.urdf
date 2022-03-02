@@ -122,6 +122,12 @@
                 <mesh filename="package://my_mira_description/models/mira/meshes/mira_head_v5.dae"/>
             </geometry>
         </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.06"/>
+            </geometry>
+        </collision>
         <inertial>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <mass value="0.02" />
